@@ -26,7 +26,7 @@ filterFastqNReads.py
 
 FUNCTION:
 This script will take the next generation sequencing reads in fastq format, and then will filter out the sequence which has unknown base pair Ns. 
-          The reads without unambiguous Ns will be kept in the result file. This will retrieve the perfect reads without missing data.
+          The reads without unambiguous Ns will be kept in the result file while those with Ns will be discarded. This will retrieve the perfect reads without missing data.
 
 USAGE: 
 
