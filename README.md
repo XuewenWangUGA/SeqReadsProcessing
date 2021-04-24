@@ -5,7 +5,7 @@ Tools for short and long next generation sequencing reads processing
 filterReads.py
 
 FUNCTION:
-This script will take the next generation sequencing reads, e.g. from PacBio SMART sequencing, in the input file in fasta format
+This script will take the next generation sequencing reads, e.g. PacBio SMART sequencing reads, from the input file in fasta format
 Then will filter the sequence based on the cutoff value of minimal sequence length in bp. The reads longer than this cutoff will be output to the result file.
 
 Parameters: outseqf in_seqfile length_cutoff
