@@ -4,7 +4,7 @@ import sys
 from Bio import SeqIO
 
 '''
-fFUNCTION:
+FUNCTION:
 This script will take the next generation sequencing reads, e.g. PacBio SMART sequencing reads, from the input file in fasta format
 Then will filter the sequence based on the cutoff value of minimal sequence length in bp. The reads longer than this cutoff will be output to the result file.
 
