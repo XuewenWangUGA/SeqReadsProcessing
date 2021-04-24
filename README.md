@@ -1,7 +1,7 @@
 # SeqReadsProcessing (SRP)
 Tools for short and long next generation sequencing reads processing
 
-# Long or short reads filtering
+# Long or short reads length filtering
 filterReads.py
 
 FUNCTION:
