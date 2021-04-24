@@ -19,3 +19,40 @@ Example on testing data:
 `python3 filterReads.py ./testseq.filtered.fasta ./testseq.fasta 1000`
 
 Path information could be added before the input and output file name if files are not in current directory.
+
+
+# Filter out reads with unknown base Ns
+filterFastqNReads.py
+
+FUNCTION:
+This script will take the next generation sequencing reads in fastq format
+          Then will filter out the sequence which has unknown base pair Ns. 
+          The reads without N will be output to the result file. 
+          This will retrieve the perfect reads without missing data.
+
+HELP: python3 filterFastqNReads.py -h [--help]
+
+
+USAGE: 
+
+filterFastqNReads.py [-h] -i INPUT [-o OUTPUT]
+
+optional arguments:
+
+  -h, --help            show this help message and exit
+  
+  -i INPUT, --input INPUT
+  
+                        The input file containing reads in fastq format
+                        
+  -o OUTPUT, --output OUTPUT
+  
+                        The output file to save reads without base N in fastq
+                        format
+  
+   
+Example on testing data:
+
+python3 filterFastqNReads.py -i testdata_illumina_1.fq -o testdata_illumina_1.filterN.fq
+
+Path information could be added before the input and output file name if files are not in current directory.
