@@ -18,4 +18,4 @@ Example on testing data:
 
 `python3 filterReads.py ./testseq.filtered.fasta ./testseq.fasta 1000`
 
-Path information could be added before the input and output file name if files are not in current directroy.
+Path information could be added before the input and output file name if files are not in current directory.
