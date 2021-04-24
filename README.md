@@ -1,5 +1,5 @@
 # SeqReadsProcessing (SRP)
-Tools for short and long next generation sequencing reads processing
+Tools for next generation sequencing reads processing suitable for both short and long reads
 
 # Long or short NGS reads length filtering
 filterReads.py
@@ -37,12 +37,14 @@ optional arguments:
   -h, --help          show this help message and exit
   
   -i INPUT, --input INPUT
+                      
                       The input file containing reads in fastq format
                         
   -o OUTPUT, --output OUTPUT
+                      
                       The output file to save reads without base N in fastq format
   
    
 Example on testing data:
 
-python3 filterFastqNReads.py -i testdata_illumina_1.fq -o testdata_illumina_1.filteredN.fq
+`python3 filterFastqNReads.py -i testdata_illumina_1.fq -o testdata_illumina_1.filteredN.fq`
