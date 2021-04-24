@@ -1,4 +1,4 @@
-# SeqReadsProcessing
+# SeqReadsProcessing (SRP)
 Tools for short and long next generation sequencing reads processing
 
 # Long or short reads filtering
