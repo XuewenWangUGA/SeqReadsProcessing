@@ -2,7 +2,7 @@
 Tools for Next Generation Sequencing reads processing suitable for both short Illumina and PacBio NanoPore long reads
 
 
-# installation
+# Installation
 
 `git clone https://github.com/XuewenWangUGA/SeqReadsProcessing/`
 
@@ -92,7 +92,7 @@ N50 length (bp): 2201
 
 
 
-# Filter out reads with unambiguous base N
+# Clean reads with unambiguous base N
 filterFastqNReads.py
 
 FUNCTION:
