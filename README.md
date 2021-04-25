@@ -51,7 +51,7 @@ Example on testing data:
 
 
 
-# Extracting given reads from sequence IDs
+# Extracting reads from sequence IDs
 seqExtract_fromID.py
 
 python3 seqExtract_fromID.py -h
