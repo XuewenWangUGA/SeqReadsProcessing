@@ -85,6 +85,4 @@ Result file with xxtracted sequence:    testseq.fasta_extracted.fa
  
 Testing example:
 
-`python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa`
-    
-    e.g.: python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa
+e.g. `python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa`
