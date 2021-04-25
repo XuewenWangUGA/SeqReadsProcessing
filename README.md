@@ -59,7 +59,7 @@ Total # of not extracted sequence:      1
 Result file with xxtracted sequence:    testseq.fasta_extracted.fa
 
 
-# Long or short NGS reads length filtering
+# NGS reads length filtering and read statistical summary
 filterReads.py
 
 FUNCTION:
