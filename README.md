@@ -20,14 +20,15 @@ Example on testing data:
 
 Path information could be added before the input and output file name if files are not in current directory. A statistical summary will be provided for total reads, read length, N50 length before and after filtering.
 e.g.
-
-python3 filterReads.py OUT_file_in_fasta IN_seq_file_in_fasta length_cutoff
-          e.g.: python3 filterReads.py ./testseq.filtered.fasta ./testseq.fasta 1000 
           
 Total number of input sequences/reads:   7
+
 Total length (bp) of input sequences/reads:      7313
+
 Total number of sequences/reads after filtering:         3
+
 Total length (bp) of filtered sequences/reads:   4558
+
 N50 length (bp): 2201
 
 
