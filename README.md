@@ -54,6 +54,10 @@ Example on testing data:
 # Extracting reads from sequence IDs
 seqExtract_fromID.py
 
+FUNCTION:
+
+This script will take a list of IDs from a file and then extract the ID associated reads from a file containing  a lots of reads/sequences in fasta format. The hash or dictionary algorithem is used so it is very fast. The minimum memory of computer should be big than the reads file.
+
 USAGE:
 
 `python3 seqExtract_fromID.py Options`
@@ -67,8 +71,12 @@ USAGE:
               -o Outfile_extracted_seq The file name to save the extracted sequences in fasta format
  
                -h help
- 
- An extracting statistical information will output to standout. e.g.
+  
+Testing example:
+
+e.g. `python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa`
+
+ A statistical information will output to standout during run. e.g.
  
  Input id file is id.txt
  
@@ -85,8 +93,3 @@ Total # of extracted sequence:  2
 Total # of not extracted sequence:      1
 
 Result file with xxtracted sequence:    testseq.fasta_extracted.fa
-
- 
-Testing example:
-
-e.g. `python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa`
