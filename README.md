@@ -1,5 +1,6 @@
 # SeqReadsProcessing (SRP)
 Tools for Next Generation Sequencing reads processing suitable for both short Illumina and PacBio NanoPore long reads
+All these tools are intitally eveloped by Xuewen Wang.
 
 
 # Installation
