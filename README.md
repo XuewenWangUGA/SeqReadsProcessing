@@ -1,10 +1,68 @@
 # SeqReadsProcessing (SRP)
 Tools for Next Generation Sequencing reads processing suitable for both short Illumina and PacBio NanoPore long reads
 
+
+# installation
+
+`git clone https://github.com/XuewenWangUGA/SeqReadsProcessing/
+
+cd SeqReadsProcessing `
+
+# Dependency 
+The Biopython is needed for some scripts. To install Biopython
+
+`pip install biopython`
+For more details, visit [Biopython]https://biopython.org/wiki/Download
+
+# Extracting reads from sequence IDs
+seqExtract_fromID.py
+
+FUNCTION:
+
+This script will take a list of IDs from a file and then extract the ID associated reads from a file containing  a lots of reads/sequences in fasta format. The hash or dictionary algorithem is used so it is very fast. The minimum memory of computer should be bigger than the size of the read file.
+
+USAGE:
+
+`python3 seqExtract_fromID.py Options`
+
+ Options: 
+ 
+              -i input_idfile  The file name of id list, one sequence ID per line
+ 
+              -s input_fasta_seqfile The sequence file containing all sequences in fasta format
+ 
+              -o Outfile_extracted_seq The file name to save the extracted sequences in fasta format
+ 
+               -h help
+  
+Testing example:
+
+e.g. `python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa`
+
+ A statistical information will output to standout during run. e.g.
+ 
+ Input id file is id.txt
+ 
+Input sequence file:  testseq.fasta
+
+Output seq file is testseq.fasta_extracted.fa
+
+Warning: sequence is not available for IDs: >111 
+
+Total # of id to bait:  3
+
+Total # of extracted sequence:  2
+
+Total # of not extracted sequence:      1
+
+Result file with xxtracted sequence:    testseq.fasta_extracted.fa
+
+
 # Long or short NGS reads length filtering
 filterReads.py
 
 FUNCTION:
+
 This script will take the next generation sequencing reads, e.g. PacBio SMART sequencing reads, from the input file in fasta format
 Then will filter the sequence based on the cutoff value of minimal sequence length in bp. The reads longer than this cutoff will be output to the result file.
 
@@ -64,45 +122,4 @@ Example on testing data:
 A statistical summary will be provided for total reads, read length, N50 length before and after filtering.
 
 
-# Extracting reads from sequence IDs
-seqExtract_fromID.py
 
-FUNCTION:
-
-This script will take a list of IDs from a file and then extract the ID associated reads from a file containing  a lots of reads/sequences in fasta format. The hash or dictionary algorithem is used so it is very fast. The minimum memory of computer should be bigger than the size of the read file.
-
-USAGE:
-
-`python3 seqExtract_fromID.py Options`
-
- Options: 
- 
-              -i input_idfile  The file name of id list, one sequence ID per line
- 
-              -s input_fasta_seqfile The sequence file containing all sequences in fasta format
- 
-              -o Outfile_extracted_seq The file name to save the extracted sequences in fasta format
- 
-               -h help
-  
-Testing example:
-
-e.g. `python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa`
-
- A statistical information will output to standout during run. e.g.
- 
- Input id file is id.txt
- 
-Input sequence file:  testseq.fasta
-
-Output seq file is testseq.fasta_extracted.fa
-
-Warning: sequence is not available for IDs: >111 
-
-Total # of id to bait:  3
-
-Total # of extracted sequence:  2
-
-Total # of not extracted sequence:      1
-
-Result file with xxtracted sequence:    testseq.fasta_extracted.fa
