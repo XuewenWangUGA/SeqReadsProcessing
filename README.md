@@ -48,3 +48,41 @@ optional arguments:
 Example on testing data:
 
 `python3 filterFastqNReads.py -i testdata_illumina_1.fq -o testdata_illumina_1.filteredN.fq`
+
+
+
+# Extracting given reads from sequence IDs
+seqExtract_fromID.py
+
+python3 seqExtract_fromID.py -h
+ Options: 
+ -i input_idfile  The file name of id list, one sequence ID per line
+ 
+ -s input_fasta_seqfile The sequence file containing all sequences in fasta format
+ 
+ -o Outfile_extracted_seq The file name to save the extracted sequences in fasta format
+ 
+ An extracting statistical information will output to standout. e.g.
+ 
+ Input id file is id.txt
+ 
+Input sequence file:  testseq.fasta
+
+Output seq file is testseq.fasta_extracted.fa
+
+Warning: sequence is not available for IDs: >111 
+
+Total # of id to bait:  3
+
+Total # of extracted sequence:  2
+
+Total # of not extracted sequence:      1
+
+Result file with xxtracted sequence:    testseq.fasta_extracted.fa
+
+ 
+Testing example:
+
+python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa
+    
+    e.g.: python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa
