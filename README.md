@@ -12,7 +12,7 @@ cd SeqReadsProcessing `
 The Biopython is needed for some scripts. To install Biopython
 
 `pip install biopython`
-For more details, visit [Biopython]https://biopython.org/wiki/Download
+For more details, visit [Biopython](https://biopython.org/wiki/Download)
 
 # Extracting reads from sequence IDs
 seqExtract_fromID.py
