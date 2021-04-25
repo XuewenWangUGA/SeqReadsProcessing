@@ -56,7 +56,7 @@ seqExtract_fromID.py
 
 USAGE:
 
-`python3 seqExtract_fromID.py options`
+`python3 seqExtract_fromID.py Options`
 
  Options: 
  
