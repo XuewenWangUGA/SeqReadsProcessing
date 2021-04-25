@@ -54,14 +54,18 @@ Example on testing data:
 # Extracting reads from sequence IDs
 seqExtract_fromID.py
 
+USAGE:
+
 `python3 seqExtract_fromID.py options`
 
  Options: 
+ 
  -i input_idfile  The file name of id list, one sequence ID per line
  
  -s input_fasta_seqfile The sequence file containing all sequences in fasta format
  
  -o Outfile_extracted_seq The file name to save the extracted sequences in fasta format
+ 
  -h help
  
  An extracting statistical information will output to standout. e.g.
