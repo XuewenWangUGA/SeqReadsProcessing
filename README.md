@@ -19,7 +19,7 @@ seqExtract_fromID.py
 
 FUNCTION:
 
-This script will take a list of IDs from a file and then extract the ID associated reads from a file containing  a lots of reads/sequences in fasta format. The hash or dictionary algorithem is used so it is very fast. The minimum memory of computer should be bigger than the size of the read file.
+This script will take a list of IDs from a file and then extract the ID associated reads from a file containing  a lots of reads/sequences in fasta format. The hash or dictionary algorithm is used so it is very fast. The minimum memory of computer should be bigger than the size of the read file.
 
 USAGE:
 
