@@ -1,5 +1,5 @@
 # SeqReadsProcessing (SRP)
-Tools for next generation sequencing reads processing suitable for both short and long reads
+Tools for Next Generation Sequencing reads processing suitable for both short Illumina and PacBio NanoPore long reads
 
 # Long or short NGS reads length filtering
 filterReads.py
