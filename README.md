@@ -4,14 +4,15 @@ Tools for Next Generation Sequencing reads processing suitable for both short Il
 
 # installation
 
-`git clone https://github.com/XuewenWangUGA/SeqReadsProcessing/
+`git clone https://github.com/XuewenWangUGA/SeqReadsProcessing/`
 
-cd SeqReadsProcessing `
+`cd SeqReadsProcessing `
 
 # Dependency 
 The Biopython is needed for some scripts. To install Biopython
 
 `pip install biopython`
+
 For more details, visit [Biopython](https://biopython.org/wiki/Download)
 
 # Extracting reads from sequence IDs
