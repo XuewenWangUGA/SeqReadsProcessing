@@ -9,9 +9,9 @@ This script will take the next generation sequencing reads, e.g. PacBio SMART se
 Then will convert into fasta format and write in the output file
 Parameters: outseqf in_seqfile length_cutoff
 USAGE: 
-`python3 filterReads.py OUT_file IN_seq_file length_cutoff`
+`python3 fq2fa.py OUT_file IN_seq_file length_cutoff`
 Example on testing data:
-`python3 filterReads.py ./testseq.filtered.fasta ./testseq.fasta 1000`
+`python3 fq2fa.py  testseq.fasta testdata_illumina_1.fq`
 Path information could be added before the input and output file name if files are not in current directroy.
 Version 2021-June 18th
 # use python version 3
