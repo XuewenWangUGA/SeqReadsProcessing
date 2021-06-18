@@ -130,15 +130,19 @@ fq2fa.py
 
 FUNCTION:
 This script will take the next generation sequencing reads, e.g. PacBio SMART sequencing reads, from the input file in fastq format
-Then will convert sequence into fasta format and write in the output file
+Then will convert sequence into fasta format and write in the output file.
+
 Parameters: outseqf in_seqfile
 
 USAGE: 
+
 `python3 fq2fa.py OUT_file IN_seq_file`
 
 Example on testing data:
+
 `python3 fq2fa.py  testseq.fasta testdata_illumina_1.fq`
+
 Path information could be added before the input and output file name if files are not in current directroy.
+
 Version 2021-June 18th
-## use python version 3
 
