@@ -15,6 +15,7 @@ from Bio import SeqIO
 '''
 __author__="Xuewen Wang"
 
+# module load python_3/3.6.6
 #parse arguments
 def xpar(argv):
     idfile = ''
