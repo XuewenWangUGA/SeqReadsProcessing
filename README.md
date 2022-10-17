@@ -147,6 +147,12 @@ Path information could be added before the input and output file name if files a
 Version 2021-June 18th
 
 # Sequence length tool: calculate the length of fasta sequence from a file
-sequence_length.py is a tool to calculate the sequence(s) length(s) in a input file in fasta format. 
-Usage: python3 sequence_length.py  Path/length_out_File_name Path/testseq.fasta 1000
-help: python3 sequence_length.py -h
+
+sequence_length.py is a tool to calculate the sequence(s) length(s) in a input file in fasta format.
+
+USAGE:
+ python3 sequence_length.py  OUT_file IN_seq_file length_cutoff
+e.g., `python3 sequence_length.py  Path/length_out_File_name Path/testseq.fasta 1000`
+
+help:
+python3 sequence_length.py -h
