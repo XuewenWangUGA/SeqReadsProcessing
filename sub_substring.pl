@@ -70,7 +70,7 @@ while (my $refseries=<REFDNA>){
 			print OUT "position error\n" if($extrlength<=0);
 			#output ID and extracted sequence
 			#print OUT "$seqID:$startposition", "_", "$endposition:$extrlength\t";  
-			print OUT "$seqID\t", "$extrlength\t";
+			print OUT "$seqID\t", "$extrlength\n";
 			  $startposition=$startposition-1; # the start position from 0 in perl instead of 1
  			print OUT uc substr($Sequences,$startposition,$extrlength),"\n";
 		      } #end of if
