@@ -96,9 +96,13 @@ N50 length (bp): 2201
 
 # Get summary of bp for fastq.gz
 filterReadsfastq_gz.py
+
 FUNCTION:
-This script will take the next generation sequencing reads in fastq.gz format, and then will filter out the sequence less than given length threshold of base pair.           
+
+This script will take the next generation sequencing reads in fastq.gz format, and then will filter out the sequence less than given length threshold of base pair.
+
 `python3 scripts/filterReadsfastq_gz.py out.fastq merged.fastq.gz 1`
+
 
 # Clean reads with unambiguous base N
 filterFastqNReads.py
