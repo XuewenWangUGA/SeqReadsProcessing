@@ -95,6 +95,7 @@ N50 length (bp): 2201
 
 
 # Get summary of bp for fastq.gz
+
 filterReadsfastq_gz.py
 
 FUNCTION:
@@ -102,6 +103,22 @@ FUNCTION:
 This script will take the next generation sequencing reads in fastq.gz format, and then will filter out the sequence less than given length threshold of base pair.
 
 `python3 scripts/filterReadsfastq_gz.py out.fastq merged.fastq.gz 1`
+
+
+# get the summary for a genome assembly file
+
+AssemblyStat.py
+
+This script will genome assembly in .fasta format, and then will report summary for this assembly.
+
+`python3 AssemblyStat.py OUT_file_in_fasta IN_seq_file_in_fasta min_length_cutoff`
+
+e.g.: python3 AssemblyStat.py ./testseq.filtered.fasta ./testseq.fasta 1000
+
+for help:
+
+`python3 AssemblyStat.py`
+
 
 
 # Clean reads with unambiguous base N
