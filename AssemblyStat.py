@@ -15,6 +15,9 @@ Example on testing data:
 Path information could be added before the input and output file name if files are not in current directroy.
 Version 2020-Feb 10th
 # use python version 3
+version: 1.1
+Uodates: 
+   add functions to read plain fasta file or a compressed file .gz
 '''
 __author__ ="Xuewen Wang"
 
@@ -29,15 +32,20 @@ sumraw=0
 ct=0
 ctgood=0
 
+
+# with gzip.open(file_path, 'rt') if file_path.endswith('.gz') else open(file_path, 'r') as f:
+
 outf = open(sys.argv[1], 'w')
-for record in SeqIO.parse(sys.argv[2], "fasta"):
-     ct +=1
-     sumraw += len(record.seq)
-     if int(len(record.seq)) > int(sys.argv[3]):
-          ctgood +=1
-          lengths.append(int(len(record.seq)))
-          sumlen += int(len(record.seq))
-          SeqIO.write(record, outf, "fasta")
+file_path=sys.argv[2]
+with gzip.open(file_path, 'rt') if file_path.endswith('.gz') else open(file_path, 'r') as f:
+    for record in SeqIO.parse(f, "fasta"):
+         ct +=1
+         sumraw += len(record.seq)
+         if int(len(record.seq)) > int(sys.argv[3]):
+              ctgood +=1
+              lengths.append(int(len(record.seq)))
+              sumlen += int(len(record.seq))
+              SeqIO.write(record, outf, "fasta")
 
 'Report stats'
 n = sumlen/2
