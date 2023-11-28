@@ -120,6 +120,7 @@ for help:
 `python3 AssemblyStat.py`
 
 output: a filtered fasta file and statistical summary: 
+
     Total number of input sequences/reads:   334
     Total length (bp) of input sequences/reads:      493088611
     Total number of sequences/reads after filtering:         334
