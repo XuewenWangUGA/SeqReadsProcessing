@@ -109,7 +109,7 @@ This script will take the next generation sequencing reads in fastq.gz format, a
 
 AssemblyStat.py
 
-This script will genome assembly in .fasta format, and then will report summary for this assembly.
+This script will genome assembly in .fasta or .fasta.gz format, and then will report summary for this assembly. This tool also can filter out the unwanted reads with length less than the cut off value.
 
 `python3 AssemblyStat.py OUT_file_in_fasta IN_seq_file_in_fasta min_length_cutoff`
 
@@ -118,6 +118,21 @@ e.g.: python3 AssemblyStat.py ./testseq.filtered.fasta ./testseq.fasta 1000
 for help:
 
 `python3 AssemblyStat.py`
+
+output: a filtered fasta file and statistical summary: 
+    Total number of input sequences/reads:   334
+    Total length (bp) of input sequences/reads:      493088611
+    Total number of sequences/reads after filtering:         334
+    Total length (bp) of filtered sequences/reads:   493088611
+    N50 length (bp): 11300744
+    L50 count of sequences : 15
+    
+    N80 length (bp): 4697535
+    L80 count of sequences : 33
+    
+    N90 length (bp): 1254627
+    L90 count of sequences : 56
+
 
 
 
