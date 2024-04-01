@@ -135,6 +135,26 @@ output: a filtered fasta file and statistical summary:
     L90 count of sequences : 56
 
 
+# Length of each read with satisfied length threshold to filter NGS data
+
+Usefull tool for analysis read length distribution
+
+FUNCTION:
+
+This script will take the next generation sequencing reads, e.g. PacBio SMART sequencing reads in fastq.gz format, from the input file in fasta format
+Then will filter the sequence based on the cutoff value of minimal sequence length in bp. The reads longer than this cutoff will be output to the result file.
+Parameters: outfileNameforLength in_seqfile.fastq.gz length_cutoff
+
+USAGE: 
+
+Example on testing data:
+
+`python3 filterReadsReportLengthfastq_gz ./testseq.lengths.txt ./testseq.fastq 1000` 
+
+Results data format: (Two collums Tab separated text file)
+
+    m64254e_220424_092400/38/ccs    8094
+    m64254e_220424_092400/59/ccs    8093
 
 
 # Clean reads with unambiguous base N
