@@ -233,8 +233,9 @@ python3 sequence_length.py -h
 	      reorder the sequences in the same given order in the idInfo file (-i)
     	  Drop off sequences if the id is not given
     Usage: python chromoSeq_inverse.py [options]
-   e.g., python3 chromoSeq_inverse.py -s dnaSeqtest.fasta -i idInvert.txt -o dnaInvertedSeq
-  Options:
+    
+    e.g., python3 chromoSeq_inverse.py -s dnaSeqtest.fasta -i idInvert.txt -o dnaInvertedSeq
+    Options:
 	    -h, --help: show this help message and exit
 	    -s, --seqfile: string, required, input file name of the sequences in fasta format
 	    -i, --idfile: string, required input file name containing inversion informaiton. format: id TAB + or - for keep and inverse the seq
@@ -242,4 +243,4 @@ python3 sequence_length.py -h
 	  chr02 -one id per line
 	    -o, --outfile: prefix of the output file name to store the inversed sequences.
 	    -t, --threads: int, the number of parallelized computing threads, default 1. not implemented yet
-Version: 1.0.0, April,14th,2024
+  Version: 1.0.0, April,14th,2024
