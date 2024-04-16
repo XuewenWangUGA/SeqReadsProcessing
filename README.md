@@ -1,7 +1,7 @@
 # SeqReadsProcessing (SRP)
 Tools for Next Generation Sequencing reads processing suitable for both short Illumina and PacBio NanoPore long reads
 
-These tools are intitially developed by Xuewen Wang. Free to use for academic research and education. Any any other application, please require for license.
+These tools are initially developed by Xuewen Wang. Free to use for academic research and education. Any other application, a license is required.
 
 
 # Installation
@@ -22,7 +22,7 @@ seqExtract_fromID.py
 
 FUNCTION:
 
-This script will take a list of IDs from a file and then extract the ID associated reads from a file containing  a lots of reads/sequences in fasta format. The hash or dictionary algorithm is used so it is very fast. The minimum memory of computer should be bigger than the size of the read file.
+This script will take a list of IDs from a file and then extract the ID-associated reads from a file containing  lots of reads/sequences in fasta format. The hash or dictionary algorithm is used so it is very fast. The minimum memory of the computer should be bigger than the size of the read file.
 
 USAGE:
 
@@ -42,7 +42,7 @@ Testing example:
 
 e.g. `python3 seqExtract_fromID.py -s testseq.fasta -i id.txt -o  testseq.fasta_extracted.fa`
 
- A statistical information will output to standout during run. e.g.
+ Statistical information will output to stand out during run. e.g.
  
  Input id file is id.txt
  
@@ -58,10 +58,10 @@ Total # of extracted sequence:  2
 
 Total # of not extracted sequence:      1
 
-Result file with xxtracted sequence:    testseq.fasta_extracted.fa
+Result file with extracted sequence:    testseq.fasta_extracted.fa
 
 
-# NGS reads length filtering and read statistical summary
+# NGS reads length filtering and reads statistical summary
 filterReads.py
 
 FUNCTION:
@@ -79,7 +79,7 @@ Example on testing data:
 
 `python3 filterReads.py ./testseq.filtered.fasta ./testseq.fasta 1000`
 
-Path information could be added before the input and output file name if files are not in current directory. A statistical summary will be provided for total reads, read length, N50 length before and after filtering.
+Path information could be added before the input and output file name if the files are not in the current directory. A statistical summary will be provided for total reads, read length, N50 length before and after filtering.
 e.g.
           
 Total number of input sequences/reads:   7
@@ -100,7 +100,7 @@ filterReadsfastq_gz.py
 
 FUNCTION:
 
-This script will take the next generation sequencing reads in fastq.gz format, and then will filter out the sequence less than given length threshold of base pair.
+This script will take the next generation sequencing reads in fastq.gz format, and then will filter out the sequence less than the given length threshold of the base pair.
 
 `python3 scripts/filterReadsfastq_gz.py out.fastq merged.fastq.gz 1`
 
@@ -109,7 +109,7 @@ This script will take the next generation sequencing reads in fastq.gz format, a
 
 AssemblyStat.py
 
-This script will genome assembly in .fasta or .fasta.gz format, and then will report summary for this assembly. This tool also can filter out the unwanted reads with length less than the cut off value.
+This script will genome assembly in .fasta or .fasta.gz format, and then will report a summary for this assembly. This tool also can filter out unwanted reads with lengths less than the cutoff value.
 
 `python3 AssemblyStat.py OUT_file_in_fasta IN_seq_file_in_fasta min_length_cutoff`
 
@@ -137,21 +137,21 @@ output: a filtered fasta file and statistical summary:
 
 # Length of each read with satisfied length threshold to filter NGS data
 
-Usefull tool for analysis read length distribution
+Useful tool for analysis of read length distribution
 
 FUNCTION:
 
-This script will take the next generation sequencing reads, e.g. PacBio SMART sequencing reads in fastq.gz format, from the input file in fasta format
+This script will take the next-generation sequencing reads, e.g. PacBio SMART sequencing reads in fastq.gz format, from the input file in fasta format
 Then will filter the sequence based on the cutoff value of minimal sequence length in bp. The reads longer than this cutoff will be output to the result file.
 Parameters: outfileNameforLength in_seqfile.fastq.gz length_cutoff
 
 USAGE: 
 
-Example on testing data:
+Example of testing data:
 
 `python3 filterReadsReportLengthfastq_gz ./testseq.lengths.txt ./testseq.fastq 1000` 
 
-Results data format: (Two collums Tab separated text file)
+Results data format: (Two columns Tab separated text file)
 
     m64254e_220424_092400/38/ccs    8094
     m64254e_220424_092400/59/ccs    8093
@@ -161,7 +161,7 @@ Results data format: (Two collums Tab separated text file)
 filterFastqNReads.py
 
 FUNCTION:
-This script will take the next generation sequencing reads in fastq format, and then will filter out the sequence which has unknown base pair Ns. 
+This script will take the next-generation sequencing reads in fastq format, and then will filter out the sequence that has unknown base pair Ns. 
           The reads without unambiguous Ns will be kept in the result file while those with Ns will be discarded. This will retrieve the perfect reads without missing data.
 
 USAGE: 
@@ -188,12 +188,12 @@ Example on testing data:
 A statistical summary will be provided for total reads, read length, N50 length before and after filtering.
 
 
-# Fastq to fasta convertion 
+# Fastq to fasta conversion 
 fq2fa.py
 
 FUNCTION:
 This script will take the next generation sequencing reads, e.g. PacBio SMART sequencing reads, from the input file in fastq format
-Then will convert sequence into fasta format and write in the output file.
+Then will convert the sequence into fasta format and write in the output file.
 
 Parameters: outseqf in_seqfile
 
@@ -201,11 +201,11 @@ USAGE:
 
 `python3 fq2fa.py OUT_file IN_seq_file`
 
-Example on testing data:
+Example of testing data:
 
 `python3 fq2fa.py  testseq.fasta testdata_illumina_1.fq`
 
-Path information could be added before the input and output file name if files are not in current directroy.
+Path information could be added before the input and output file name if files are not in the current directory.
 
 Version 2021-June 18th
 
@@ -213,7 +213,7 @@ Version 2021-June 18th
 
 calculate the lengths of fasta sequences from an input file and output to a result file
 
-sequence_length.py is a tool to calculate the sequence(s) length(s) in a input file in fasta format.
+sequence_length.py is a tool to calculate the sequence(s) length(s) in an input file in fasta format.
 
 USAGE:
 
@@ -224,3 +224,24 @@ e.g., `python3 sequence_length.py  Path/length_out_File_name Path/testseq.fasta 
 details in help:
 
 python3 sequence_length.py -h
+
+
+# Sequences inversion, ordering and drop-off in a genome assembly
+
+    Function: This tool programmed in python3 is designed to: 
+	      inverse the sequences (-s) in a genome assembly;
+	      reorder the sequences in the same given order in the idInfo file (-i)
+    	  Drop off sequences if the id is not given
+    Usage: python chromoSeq_inverse.py [options]
+    
+    e.g., python3 chromoSeq_inverse.py -s dnaSeqtest.fasta -i idInvert.txt -o dnaInvertedSeq.fa
+    Options:
+	    -h, --help: show this help message and exit
+	    -s, --seqfile: string, required, input file name of the sequences in fasta format
+	    -i, --idfile: string, required input file name containing inversion information. format: id TAB + or - for keep and inverse the seq. one id per line.
+ 	 e.g. :
+		          chr01	+ 
+			  chr02 -
+	    -o, --outfile: the output file name to store the inversed sequences; optional.
+	    -t, --threads: int, the number of parallelized computing threads, default 1. not implemented yet
+     Version: 1.0.0, April,14th,2024
