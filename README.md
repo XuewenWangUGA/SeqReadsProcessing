@@ -205,7 +205,7 @@ Example of testing data:
 
 `python3 fq2fa.py  testseq.fasta testdata_illumina_1.fq`
 
-Path information could be added before the input and output file name if files are not in the current directroy.
+Path information could be added before the input and output file name if files are not in the current directory.
 
 Version 2021-June 18th
 
@@ -234,11 +234,11 @@ python3 sequence_length.py -h
     	  Drop off sequences if the id is not given
     Usage: python chromoSeq_inverse.py [options]
     
-    e.g., python3 chromoSeq_inverse.py -s dnaSeqtest.fasta -i idInvert.txt -o dnaInvertedSeq
+    e.g., python3 chromoSeq_inverse.py -s dnaSeqtest.fasta -i idInvert.txt -o dnaInvertedSeq.fa
     Options:
 	    -h, --help: show this help message and exit
 	    -s, --seqfile: string, required, input file name of the sequences in fasta format
-	    -i, --idfile: string, required input file name containing inversion informaiton. format: id TAB + or - for keep and inverse the seq. one id per line.
+	    -i, --idfile: string, required input file name containing inversion information. format: id TAB + or - for keep and inverse the seq. one id per line.
  	 e.g. :
 		          chr01	+ 
 			  chr02 -
