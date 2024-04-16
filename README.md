@@ -244,4 +244,4 @@ python3 sequence_length.py -h
 			  chr02 -
 	    -o, --outfile: prefix of the output file name to store the inversed sequences.
 	    -t, --threads: int, the number of parallelized computing threads, default 1. not implemented yet
-  Version: 1.0.0, April,14th,2024
+     Version: 1.0.0, April,14th,2024
