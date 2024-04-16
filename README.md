@@ -238,9 +238,10 @@ python3 sequence_length.py -h
     Options:
 	    -h, --help: show this help message and exit
 	    -s, --seqfile: string, required, input file name of the sequences in fasta format
-	    -i, --idfile: string, required input file name containing inversion informaiton. format: id TAB + or - for keep and inverse the seq
- 	 e.g. chr01	+ 
-	  chr02 -one id per line
+	    -i, --idfile: string, required input file name containing inversion informaiton. format: id TAB + or - for keep and inverse the seq. one id per line.
+ 	 e.g. :
+          chr01	+ 
+	  chr02 -
 	    -o, --outfile: prefix of the output file name to store the inversed sequences.
 	    -t, --threads: int, the number of parallelized computing threads, default 1. not implemented yet
   Version: 1.0.0, April,14th,2024
