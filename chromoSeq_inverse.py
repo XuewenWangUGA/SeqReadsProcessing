@@ -14,7 +14,7 @@ def usage():
           "\tDrop off sequences if the id is not given"
     )
     print(f"Usage: python {xapp} [options]")
-    print(f"e.g., python3 {xapp} -s dnaSeqtest.fasta -i idInvert.txt -o dnaInvertedSeq")
+    print(f"e.g., python3 {xapp} -s dnaSeqtest.fasta -i idInvert.txt -o dnaInvertedSeq.fa")
     print("Options:")
     print("\t-h, --help: show this help message and exit")
     print("\t-s, --seqfile: string, required, input file name of the sequences in fasta format")
@@ -22,7 +22,7 @@ def usage():
           "\t e.g. chr01\t+ "
           "\n\t chr02 -"
           "one id per line")
-    print("\t-o, --outfile: prefix of the output file name to store the inversed sequences.")
+    print("\t-o, --outfile: the output file name to store the inversed sequences; optional.")
     print("\t-t, --threads: int, the number of parallelized computing threads, default 1. not implemented yet")
     print(f"Version: {version}, April,14th,2024")
     print(f"Support: {__author__},  xwang.kib@gmail.com")
