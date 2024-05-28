@@ -112,7 +112,7 @@ e.g.: `python filterReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz 1000`
 
 # NGS too long reads removal from fastq.gz and reads statistical summary
 
-RemoveLongReadsfastq_gz.py
+removeLongReadsfastq_gz.py
 
 FUNCTION:
 
@@ -120,9 +120,9 @@ This tool will remove the too long reads e.g. chimeric reads from Long-read sequ
 
 usage
 
-`RemoveLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz max_length_cutoff`
+`removeLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz max_length_cutoff`
 
-e.g.: `python `RemoveLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz 40000`
+e.g.: `python `removeLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz 40000`
 
 
 # Get summary of bp for fastq.gz
