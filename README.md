@@ -122,7 +122,7 @@ usage
 
 `removeLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz max_length_cutoff`
 
-e.g.: `python `removeLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz 40000`
+e.g.: `python removeLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz 40000`
 
 
 # Get summary of bp for fastq.gz
