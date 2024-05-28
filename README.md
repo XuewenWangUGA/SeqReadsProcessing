@@ -61,7 +61,7 @@ Total # of not extracted sequence:      1
 Result file with extracted sequence:    testseq.fasta_extracted.fa
 
 
-# short sequences removal from a fasta file and report a statistical summary
+# Short sequences removal from a fasta file and report a statistical summary
 filterReads.py
 
 FUNCTION:
@@ -136,7 +136,7 @@ This script will take the next generation sequencing reads in fastq.gz format, a
 `python3 scripts/filterReadsfastq_gz.py out.fastq merged.fastq.gz 1`
 
 
-# get the summary for a genome assembly file
+# Get the summary for a genome assembly file
 
 AssemblyStat.py
 
