@@ -93,7 +93,7 @@ Total length (bp) of filtered sequences/reads:   4558
 N50 length (bp): 2201
 
 
-# NGS too long reads removal from fastq.gz and reads statistical summary
+# NGS too short reads removal from fastq.gz and reads statistical summary
 
 filterReadsfastq_gz.py
 
