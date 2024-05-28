@@ -96,13 +96,13 @@ N50 length (bp): 2201
 
 RemoveLongReadsfastq_gz.py
 
+FUNCTION:
+
 This tool will remove the too long reads e.g. chimeric reads from Long-read sequencing fastq.gz if longer than given cutoff in base, e.g. 40000, and save the remaning reads to a fastq.gz file, and aslo print the statistical summary.
 
 usage
 
 `RemoveLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz max_length_cutoff`
-
-
 
 
 # Get summary of bp for fastq.gz
