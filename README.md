@@ -4,8 +4,10 @@ Tools for Next Generation Sequencing reads processing suitable for both short Il
 These tools are initially developed by Xuewen Wang. Free to use for academic research and education. 
 
 Any other application is allowed once including the a statement of the following:
-Orginal source code from https://github.com/XuewenWangUGA/SeqReadsProcessing
-Author: Xuewen Wang
+
+	Orginal source code from https://github.com/XuewenWangUGA/SeqReadsProcessing
+
+	Author: Xuewen Wang
 
 
 
