@@ -61,7 +61,7 @@ Total # of not extracted sequence:      1
 Result file with extracted sequence:    testseq.fasta_extracted.fa
 
 
-# NGS too short reads removal and reads statistical summary
+# short sequences removal from a fasta file and report a statistical summary
 filterReads.py
 
 FUNCTION:
@@ -92,7 +92,25 @@ Total length (bp) of filtered sequences/reads:   4558
 
 N50 length (bp): 2201
 
-# NGS too long reads removal and reads statistical summary
+
+# NGS too long reads removal from fastq.gz and reads statistical summary
+
+filterReadsfastq_gz.py
+
+FUNCTION:
+
+This tool will remove the too short reads from Long-read sequencing fastq.gz if shorter than given cutoff in base, e.g. 1000, and save the remaning reads to a fastq.gz file, and aslo print the statistical summary.
+
+Input: .fastq.gz ; output: .fastq.gz
+
+usage
+
+`filterReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz min_length_cutoff`
+
+e.g.: `python filterReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz 1000`
+
+
+# NGS too long reads removal from fastq.gz and reads statistical summary
 
 RemoveLongReadsfastq_gz.py
 
@@ -103,6 +121,8 @@ This tool will remove the too long reads e.g. chimeric reads from Long-read sequ
 usage
 
 `RemoveLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz max_length_cutoff`
+
+e.g.: `python `RemoveLongReadsfastq_gz.py OUT_fastq.gz IN_seq_fastq.gz 40000`
 
 
 # Get summary of bp for fastq.gz
