@@ -40,15 +40,15 @@ ctgood=0
 
 
 #outf = open(sys.argv[1], 'w')
-with gzip.open(sys.argv[1], 'wb') as outf:
+with gzip.open(sys.argv[1], 'wt') as outf:
     with gzip.open(sys.argv[2], "rt") as handle:
         for record in SeqIO.parse(handle, "fastq"):
             ct +=1
             sumraw += len(record.seq)
-            if int(len(record.seq)) < int(sys.argv[3]):
+            if len(record.seq) < int(sys.argv[3]):
                 ctgood +=1
-                lengths.append(int(len(record.seq)))
-                sumlen += int(len(record.seq))
+                lengths.append(len(record.seq))
+                sumlen += len(record.seq)
                 SeqIO.write(record, outf, "fastq")
 
 #'Report stats'
