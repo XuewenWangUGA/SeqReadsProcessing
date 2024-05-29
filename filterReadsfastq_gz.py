@@ -31,7 +31,7 @@ ct=0
 ctgood=0
 
 #outf = open(sys.argv[1], 'w')
-with gzip.open(sys.argv[1], 'wb') as outf:
+with gzip.open(sys.argv[1], 'wt') as outf:
           with gzip.open(sys.argv[2], "rt") as handle:
               for record in SeqIO.parse(handle, "fastq"):
                   ct +=1
