@@ -27,7 +27,7 @@ def gzip_file(source_file_path, dest_file_path):
             shutil.copyfileobj(f_in, f_out)
 
 usage=""" python3 removeLongReadsfastq_gz.py OUT_file_in_fastq.gz IN_seq_file_in_fastq.gz Max_length_cutoff
-          e.g.: python3 removeLongReadsfastq_gz.py.py ./testseq.filtered.fastq.gz ./testseq.fastq.gz 5000
+          e.g.: python3 removeLongReadsfastq_gz.py ./testseq.filtered.fastq.gz ./testseq.fastq.gz 5000
           """
 print(usage)
 
