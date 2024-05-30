@@ -14,7 +14,7 @@ USAGE:
 `python3 RemoveLongReadsfastq_gz.py OUT_file IN_seq_file Max_length_cutoff`
 Example on testing data:
 `python3 RemoveLongReadsfastq_gz.py ./testseq.filtered.fasta ./testseq.fasta 5000`
-Path information could be added before the input and output file name if files are not in current directroy.
+Path information could be added before the input and output file name if files in compressed format .gz are not in current directroy.
 Version 2024-May 26th
 # use python version 3
 '''
