@@ -283,3 +283,22 @@ python3 sequence_length.py -h
 	    -o, --outfile: the output file name to store the inversed sequences; optional.
 	    -t, --threads: int, the number of parallelized computing threads, default 1. not implemented yet
      Version: 1.0.0, April,14th,2024
+
+
+# check Ns in DNA sequences
+usage: 
+`python3 DNAseq_Ns_finder.py DNAseqFile.fasta >Ns_result.tsv`
+
+output: using example data DNA_Ns_test.fasta
+
+	#ID	Start_Pos	Length_of_Ns(bp)
+	seq1	4	5
+	seq1	19	4
+	seq1	27	4
+	seq1	42	3
+	seq1	46	4
+	seq2	5	5
+	seq2	20	4
+	seq2	28	4
+	seq2	43	3
+	seq2	47	4
