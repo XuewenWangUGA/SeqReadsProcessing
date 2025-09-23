@@ -5,16 +5,16 @@ from Bio import SeqIO
 
 '''
 FUNCTION:
-This script will take the next generation sequencing reads, e.g. PacBio SMART sequencing reads, from the input file in fasta format
-Then will filter the sequence based on the cutoff value of minimal sequence length in bp. The reads longer than this cutoff will be output to the result file.
+This script will take the next-generation sequencing reads, e.g., PacBio SMART HiFi and ONT ultra long sequencing reads, from the input file in fasta format
+Then, we will filter the sequence based on the cutoff value of the minimum sequence length in base pairs (bp). The reads longer than this cutoff will be output to the result file.
 Parameters: outseqf in_seqfile length_cutoff
 USAGE: 
 `python3 filterReads.py OUT_file IN_seq_file length_cutoff`
 Example on testing data:
 `python3 filterReads.py ./testseq.filtered.fasta ./testseq.fasta 1000`
-Path information could be added before the input and output file name if files are not in current directroy.
+Path information could be added before the input and output file names if files are not in the current directory.
 Version 2020-Feb 10th
-# use python version 3
+# use Python version 3
 '''
 __author__ ="Xuewen Wang"
 
@@ -105,19 +105,19 @@ for x in range(len(lengths)):
      total += lengths[x]
      seqcout += 1
      if (total >= n and N50):
-          print("N50 length (bp):\t%i" % (lengths[x-1]))
+          print("N50 length (bp):\t%i" % (lengths[x]))
           print("L50 count of sequences:\t%i\n" %seqcout)
           N50=False
      
      'N80 summary'
      if (total >= sumlen*0.8 and N80):
-          print("N80 length (bp):\t%i" % (lengths[x-1]))
+          print("N80 length (bp):\t%i" % (lengths[x]))
           print("L80 count of sequences:\t%i\n" %seqcout)
           N80=False
      
      'N90 summary'
      if (total >= sumlen*0.9 and N90):
-          print("N90 length (bp):\t%i" % (lengths[x-1]))
+          print("N90 length (bp):\t%i" % (lengths[x]))
           print("L90 count of sequences:\t%i\n" %seqcout)
           N90=False
           break
